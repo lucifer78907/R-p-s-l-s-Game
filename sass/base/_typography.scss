@@ -1,0 +1,15 @@
+.heading-primary {
+  font-family: var(--font-primary);
+  font-size: 9.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #e7e7e7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &--next-line {
+    text-align: center;
+  }
+}

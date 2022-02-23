@@ -1,0 +1,14 @@
+{
+  "name": "rpsls_game",
+  "version": "1.0.0",
+  "description": "Game made with backend as flask",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Rudra",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

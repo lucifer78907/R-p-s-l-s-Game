@@ -1,0 +1,10 @@
+.test {
+  background-image: linear-gradient(to right, rgba(#000, 0.8), rgba(#000, 0.2)),
+    url(../../img/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}

@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+:root {
+  --font-primary: "Annie Use Your Telescope", cursive;
+  --font-secondary: "Amatic SC", cursive; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  line-height: 1;
+  padding: 2.4rem; }
+
+.heading-primary {
+  font-family: var(--font-primary);
+  font-size: 9.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #e7e7e7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .heading-primary--next-line {
+    text-align: center; }
+
+.test {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../../img/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
