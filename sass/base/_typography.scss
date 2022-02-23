@@ -9,7 +9,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  &--first-line {
+    display: inline-block;
+    animation: moveinleft 1s ease-in;
+  }
+
   &--next-line {
     text-align: center;
+    display: block;
+    animation: moveinright 1s ease-in;
   }
 }
