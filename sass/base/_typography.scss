@@ -1,32 +1,30 @@
 .heading-primary {
   font-family: var(--font-primary);
-  font-size: 9.6rem;
+  font-size: 6.4rem;
   font-weight: 700;
-  line-height: 1.2;
   color: #e7e7e7;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include absCen;
 
-  &--first-line {
+  &__word {
+    display: flex;
+    gap: 0.5rem;
+    transition: gap 0.3s;
+  }
+
+  &__span {
     display: inline-block;
-    animation: moveinleft 1s ease-in;
-
-    & > * {
-      display: inline-block;
-    }
-
-    &:hover > &--color-1 {
-      color: var(--color-header-1);
-      animation: bounceup 0.2s ease-in;
-      animation-fill-mode: forwards;
+    &--color {
+      color: currentColor;
     }
   }
 
-  &--next-line {
-    text-align: center;
-    display: block;
-    animation: moveinright 1s ease-in;
+  &:hover {
+    gap: 0.6rem;
+  }
+
+  &:hover &__span--color {
+    color: var(--color-header-1);
+    animation: bounceup 0.5s cubic-bezier(0.77, -0.02, 0, 0.98);
+    animation-fill-mode: forwards;
   }
 }

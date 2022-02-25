@@ -17,10 +17,8 @@
 @keyframes bounceup {
   0% {
     transform: translateY(0); }
-  80% {
-    transform: translateY(-3rem); }
   100% {
-    transform: translateY(-1rem); } }
+    transform: translateY(-2rem) scale(1.2); } }
 
 *,
 *::before,
@@ -42,31 +40,31 @@ body {
 :root {
   --font-primary: "Annie Use Your Telescope", cursive;
   --font-secondary: "Amatic SC", cursive;
-  --color-header-1: #4dabf7; }
+  --color-header-1: #74c0fc; }
 
 .heading-primary {
   font-family: var(--font-primary);
-  font-size: 9.6rem;
+  font-size: 6.4rem;
   font-weight: 700;
-  line-height: 1.2;
   color: #e7e7e7;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
-  .heading-primary--first-line {
-    display: inline-block;
-    animation: moveinleft 1s ease-in; }
-    .heading-primary--first-line > * {
-      display: inline-block; }
-    .heading-primary--first-line:hover > .heading-primary--first-line--color-1 {
-      color: var(--color-header-1);
-      animation: bounceup 0.2s ease-in;
-      animation-fill-mode: forwards; }
-  .heading-primary--next-line {
-    text-align: center;
-    display: block;
-    animation: moveinright 1s ease-in; }
+  .heading-primary__word {
+    display: flex;
+    gap: 0.5rem;
+    transition: gap 0.3s; }
+  .heading-primary__span {
+    display: inline-block; }
+    .heading-primary__span--color {
+      color: currentColor; }
+  .heading-primary:hover {
+    gap: 0.6rem; }
+  .heading-primary:hover .heading-primary__span--color {
+    color: var(--color-header-1);
+    animation: bounceup 0.5s cubic-bezier(0.77, -0.02, 0, 0.98);
+    animation-fill-mode: forwards; }
 
 .header {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../../img/hero-img.jpg);

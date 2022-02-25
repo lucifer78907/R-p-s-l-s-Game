@@ -23,10 +23,7 @@
   0% {
     transform: translateY(0);
   }
-  80% {
-    transform: translateY(-3rem);
-  }
   100% {
-    transform: translateY(-1rem);
+    transform: translateY(-2rem) scale(1.2);
   }
 }
