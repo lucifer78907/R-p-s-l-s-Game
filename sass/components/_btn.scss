@@ -48,4 +48,9 @@
     display: inline-block;
     animation: bounceup 1s ease-in-out infinite;
   }
+
+  &--play {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
 }

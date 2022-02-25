@@ -61,7 +61,7 @@
     left: 0%;
     height: 0.1rem;
     width: 0%;
-    background-color: var(--color-header-grey-2);
+    background-color: currentColor;
     transition: all 1s;
   }
 
@@ -69,5 +69,10 @@
     &::after {
       width: 100%;
     }
+  }
+
+  &-play_now {
+    color: var(--color-grey-2);
+    margin-top: 6rem;
   }
 }
