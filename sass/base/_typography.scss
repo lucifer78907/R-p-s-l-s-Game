@@ -6,6 +6,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   margin-bottom: 8rem;
+  animation: moveinleft 1s ease-out;
 
   &__word {
     display: inline-block;
@@ -42,5 +43,30 @@
     color: var(--color-header-3);
     animation: bounceup 0.5s cubic-bezier(0.77, -0.02, 0, 0.98);
     animation-fill-mode: forwards;
+  }
+}
+
+.heading-secondary {
+  font-size: 6rem;
+  text-transform: uppercase;
+  display: inline-block;
+  color: var(--color-header-grey-2);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -12%;
+    left: 0%;
+    height: 0.1rem;
+    width: 0%;
+    background-color: var(--color-header-grey-2);
+    transition: all 1s;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
   }
 }
