@@ -9,25 +9,30 @@
     font-size: 6rem;
     font-weight: 400;
     display: grid;
-    grid-template-columns: max-content;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
     justify-content: center;
-    row-gap: 2rem;
+    row-gap: 6rem;
+    column-gap: 9.6rem;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   &__text {
     display: inline-block;
   }
-}
 
-.test {
-  width: 4rem;
-  height: 4rem;
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: yellow;
+    transition: all 0.5s;
+  }
 
-  fill: yellow;
+  &__item:hover &__icon {
+    transform: rotate(360deg) scale(1.4);
+  }
 }
