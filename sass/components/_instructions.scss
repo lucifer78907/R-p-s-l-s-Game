@@ -3,4 +3,31 @@
   margin-top: -10rem;
   text-align: center;
   background-color: var(--color-grey-2);
+
+  &__list {
+    list-style: none;
+    font-size: 6rem;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    row-gap: 2rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__text {
+    display: inline-block;
+  }
+}
+
+.test {
+  width: 4rem;
+  height: 4rem;
+
+  fill: yellow;
 }
