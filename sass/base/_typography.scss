@@ -3,11 +3,9 @@
   font-size: 8rem;
   font-weight: 700;
   color: #e7e7e7;
-  text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  @include absCen;
-  top: 40%;
+  margin-bottom: 8rem;
 
   &__word {
     display: inline-block;
@@ -16,7 +14,13 @@
   &__span {
     display: inline-block;
     &--color {
-      color: currentColor;
+      color: var(--color-header-3);
+    }
+    &--color-1 {
+      color: var(--color-header-1);
+    }
+    &--color-2 {
+      color: var(--color-header-2);
     }
   }
 

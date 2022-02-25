@@ -46,6 +46,7 @@ body {
   --color-header-2: #b197fc;
   --color-header-3: #faa2c1;
   --color-header-grey-1: #ddd;
+  --color-header-grey-2: #333;
   --color-black: #000;
   --color-white: #fff; }
 
@@ -54,20 +55,19 @@ body {
   font-size: 8rem;
   font-weight: 700;
   color: #e7e7e7;
-  text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 40%; }
+  margin-bottom: 8rem; }
   .heading-primary__word {
     display: inline-block; }
   .heading-primary__span {
     display: inline-block; }
     .heading-primary__span--color {
-      color: currentColor; }
+      color: var(--color-header-3); }
+    .heading-primary__span--color-1 {
+      color: var(--color-header-1); }
+    .heading-primary__span--color-2 {
+      color: var(--color-header-2); }
   .heading-primary:hover .heading-primary__span {
     transform: scale(0.9); }
   .heading-primary:hover .heading-primary__span--color {
@@ -83,6 +83,48 @@ body {
     animation: bounceup 0.5s cubic-bezier(0.77, -0.02, 0, 0.98);
     animation-fill-mode: forwards; }
 
+.btn, .btn:link, .btn:visited {
+  font-family: var(--font-secondary);
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--color-header-grey-2);
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--color-white);
+  padding: 1.8rem 3.6rem;
+  border-radius: 10000px;
+  position: relative;
+  transition: all 0.4s; }
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(250, 162, 193, 0.4), 0 1rem 2rem rgba(177, 151, 252, 0.6); }
+  .btn:hover::after {
+    transform: scale(1.2);
+    opacity: 0; }
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 0.5rem 1rem rgba(250, 162, 193, 0.4), 0 1rem 2rem rgba(177, 151, 252, 0.6); }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  background-color: var(--color-white);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10000px; }
+
+.btn:hover span {
+  font-size: 3rem;
+  display: inline-block;
+  animation: bounceup 1s ease-in-out infinite; }
+
 .header {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../../img/hero-img.jpg);
   background-position: center;
@@ -90,6 +132,7 @@ body {
   height: 85vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  text-align: center;
   position: relative; }
   .header__icon {
     width: 6rem;
@@ -99,3 +142,9 @@ body {
     left: 2rem; }
     .header__icon[name="dice-outline"] {
       color: var(--color-white); }
+  .header__text-box {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }

@@ -6,6 +6,7 @@
   height: 85vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  text-align: center;
   position: relative;
 
   &__icon {
@@ -18,5 +19,10 @@
     &[name="dice-outline"] {
       color: var(--color-white);
     }
+  }
+
+  &__text-box {
+    display: inline-block;
+    @include absCen;
   }
 }
