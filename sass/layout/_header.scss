@@ -7,4 +7,16 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+    &[name="dice-outline"] {
+      color: var(--color-white);
+    }
+  }
 }

@@ -4,7 +4,10 @@
   font-weight: 700;
   color: #e7e7e7;
   text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   @include absCen;
+  top: 40%;
 
   &__word {
     display: inline-block;
@@ -17,8 +20,8 @@
     }
   }
 
-  &:hover {
-    gap: 0.6rem;
+  &:hover &__span {
+    transform: scale(0.9);
   }
 
   &:hover &__span--color {

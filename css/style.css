@@ -17,8 +17,10 @@
 @keyframes bounceup {
   0% {
     transform: translateY(0); }
+  50% {
+    transform: translateY(-2rem) scale(1.2); }
   100% {
-    transform: translateY(-2rem) scale(1.2); } }
+    transform: translateY(0) scale(1.2); } }
 
 *,
 *::before,
@@ -42,7 +44,10 @@ body {
   --font-secondary: "Amatic SC", cursive;
   --color-header-1: #74c0fc;
   --color-header-2: #b197fc;
-  --color-header-3: #faa2c1; }
+  --color-header-3: #faa2c1;
+  --color-header-grey-1: #ddd;
+  --color-black: #000;
+  --color-white: #fff; }
 
 .heading-primary {
   font-family: var(--font-primary);
@@ -50,18 +55,21 @@ body {
   font-weight: 700;
   color: #e7e7e7;
   text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  top: 40%; }
   .heading-primary__word {
     display: inline-block; }
   .heading-primary__span {
     display: inline-block; }
     .heading-primary__span--color {
       color: currentColor; }
-  .heading-primary:hover {
-    gap: 0.6rem; }
+  .heading-primary:hover .heading-primary__span {
+    transform: scale(0.9); }
   .heading-primary:hover .heading-primary__span--color {
     color: var(--color-header-1);
     animation: bounceup 0.5s cubic-bezier(0.77, -0.02, 0, 0.98);
@@ -83,3 +91,11 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  .header__icon {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem; }
+    .header__icon[name="dice-outline"] {
+      color: var(--color-white); }
