@@ -12,6 +12,16 @@
   &--first-line {
     display: inline-block;
     animation: moveinleft 1s ease-in;
+
+    & > * {
+      display: inline-block;
+    }
+
+    &:hover > &--color-1 {
+      color: var(--color-header-1);
+      animation: bounceup 0.2s ease-in;
+      animation-fill-mode: forwards;
+    }
   }
 
   &--next-line {

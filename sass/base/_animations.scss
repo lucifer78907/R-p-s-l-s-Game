@@ -18,3 +18,15 @@
     transform: translateX(0);
   }
 }
+
+@keyframes bounceup {
+  0% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-3rem);
+  }
+  100% {
+    transform: translateY(-1rem);
+  }
+}
