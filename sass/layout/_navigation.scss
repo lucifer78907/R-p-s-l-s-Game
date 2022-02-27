@@ -1,0 +1,36 @@
+.nav {
+  &__checkbox {
+    display: none;
+  }
+
+  &__background {
+    height: 7rem;
+    width: 7rem;
+    background-image: radial-gradient(#faa2c1, #b197fc);
+    border-radius: 50%;
+    z-index: 1000;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+  }
+
+  &__button {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    z-index: 9999;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+  }
+
+  &__icon {
+    width: 100%;
+    color: var(--color-header-grey-2);
+  }
+
+  &__nav {
+    display: none;
+  }
+}

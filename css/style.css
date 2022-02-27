@@ -255,3 +255,33 @@ body {
     border-bottom: 3px solid #d22779; }
   .form__input::-webkit-input-placeholder {
     color: #999; }
+
+.nav__checkbox {
+  display: none; }
+
+.nav__background {
+  height: 7rem;
+  width: 7rem;
+  background-image: radial-gradient(#faa2c1, #b197fc);
+  border-radius: 50%;
+  z-index: 1000;
+  position: fixed;
+  top: 6rem;
+  right: 6rem; }
+
+.nav__button {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  z-index: 9999;
+  position: fixed;
+  top: 6rem;
+  right: 6rem; }
+
+.nav__icon {
+  width: 100%;
+  color: var(--color-header-grey-2); }
+
+.nav__nav {
+  display: none; }
