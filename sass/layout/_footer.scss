@@ -9,14 +9,14 @@
   background-image: linear-gradient(
       to right,
       #faa2c1,
-      rgba(176, 151, 252, 0.781)
+      rgba(176, 151, 252, 0.481)
     ),
     url("../../img/play_now.jpg");
   background-position: center;
   background-size: cover;
   transition: all 1s;
   border-radius: 11px;
-  height: 50rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
 }
 
 .form {
@@ -24,13 +24,21 @@
   padding: 6rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   font-size: 3.6rem;
+  margin: 4rem 0;
 
   &__label {
     display: inline-block;
     color: var(--color-header-grey-2);
     font-weight: 700;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 500ms;
+  }
+
+  &__label:hover {
+    transform: scaleY(1.3);
   }
 
   &__input {
@@ -40,9 +48,18 @@
     font-size: 2rem;
     font-family: var(--font-primary);
     font-weight: 700;
+    transition: all 0.4s;
+    border-bottom: 3px solid transparent;
+    color: #555;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
   }
 
   &__input:focus {
     outline: none;
+    border-bottom: 3px solid #d22779;
+  }
+
+  &__input::-webkit-input-placeholder {
+    color: #999;
   }
 }
