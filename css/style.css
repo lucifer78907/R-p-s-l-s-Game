@@ -267,7 +267,8 @@ body {
   z-index: 1000;
   position: fixed;
   top: 6rem;
-  right: 6rem; }
+  right: 6rem;
+  transition: all 800ms ease-out; }
 
 .nav__button {
   height: 7rem;
@@ -280,8 +281,41 @@ body {
   right: 6rem; }
 
 .nav__icon {
+  height: 2px;
+  width: 50%;
+  background-color: var(--color-header-grey-2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.nav__icon::before {
+  content: "";
+  height: 2px;
   width: 100%;
-  color: var(--color-header-grey-2); }
+  background-color: var(--color-header-grey-2);
+  position: absolute;
+  top: -0.7rem;
+  transition: all 0.2s; }
+
+.nav__icon::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-header-grey-2);
+  position: absolute;
+  top: 0.7rem;
+  left: 0;
+  transition: all 0.2s; }
+
+.nav__button:hover .nav__icon::before {
+  top: -1rem; }
+
+.nav__button:hover .nav__icon::after {
+  top: 1rem; }
 
 .nav__nav {
   display: none; }
+
+.nav__checkbox:checked ~ .nav__background {
+  transform: scale(100); }
