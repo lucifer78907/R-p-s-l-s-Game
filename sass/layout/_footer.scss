@@ -1,13 +1,48 @@
 .play_now {
   background-color: var(--color-grey-2);
   padding: 8rem;
+  text-align: center;
 }
 
 .play_form {
-  background-image: linear-gradient(to right, #faa2c1, #b197fc),
+  text-align: start;
+  background-image: linear-gradient(
+      to right,
+      #faa2c1,
+      rgba(176, 151, 252, 0.781)
+    ),
     url("../../img/play_now.jpg");
   background-position: center;
   background-size: cover;
-  border-radius: 15px;
+  transition: all 1s;
+  border-radius: 11px;
   height: 50rem;
+}
+
+.form {
+  width: 55%;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 3.6rem;
+
+  &__label {
+    display: inline-block;
+    color: var(--color-header-grey-2);
+    font-weight: 700;
+  }
+
+  &__input {
+    border: none;
+    border-radius: 9px;
+    padding: 1.2rem 2.4rem;
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+  }
+
+  &__input:focus {
+    outline: none;
+  }
 }
