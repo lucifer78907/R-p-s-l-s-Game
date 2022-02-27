@@ -1,0 +1,13 @@
+.play_now {
+  background-color: var(--color-grey-2);
+  padding: 8rem;
+}
+
+.play_form {
+  background-image: linear-gradient(to right, #faa2c1, #b197fc),
+    url("../../img/play_now.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  height: 50rem;
+}

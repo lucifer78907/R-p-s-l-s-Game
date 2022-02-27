@@ -156,7 +156,7 @@ body {
   margin-bottom: 4rem; }
 
 .instructions {
-  padding: 15rem 0;
+  padding: 15rem 0 8rem;
   margin-top: -10rem;
   text-align: center;
   background-color: var(--color-grey-2); }
@@ -183,41 +183,6 @@ body {
   .instructions__item:hover .instructions__icon {
     transform: rotate(360deg) scale(1.4); }
 
-.play_now {
-  text-align: center;
-  background-color: var(--color-grey-2);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(../../img/play_now.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.form {
-  text-align: start;
-  padding: 4rem 8rem; }
-  .form__label {
-    font-size: 4rem;
-    display: inline-block;
-    font-family: inherit;
-    color: var(--color-grey-1);
-    margin-bottom: 2rem; }
-  .form__input {
-    border: none;
-    display: block;
-    padding: 1.2rem 2.4rem;
-    font-size: 2rem;
-    font-family: var(--font-primary);
-    font-weight: 700;
-    background-color: var(--color-header-grey-1);
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    width: 50%;
-    border-bottom: 3px solid transparent;
-    transition: all 0.2s; }
-    .form__input:focus {
-      outline: none;
-      border-bottom: 3px solid #faa2c1;
-      background-color: rgba(0, 0, 0, 0.281);
-      color: var(--color-header-1); }
-
 .header {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(../../img/hero-img.jpg);
   background-position: center;
@@ -241,3 +206,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.play_now {
+  background-color: var(--color-grey-2);
+  padding: 8rem; }
+
+.play_form {
+  background-image: linear-gradient(to right, #faa2c1, #b197fc), url("../../img/play_now.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  height: 50rem; }
