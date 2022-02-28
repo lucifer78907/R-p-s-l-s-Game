@@ -78,6 +78,9 @@ body {
   @media only screen and (max-width: 75em) {
     .heading-primary {
       font-size: 6.4rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .heading-primary {
+      font-size: 5rem; } }
   .heading-primary__word {
     display: inline-block; }
   .heading-primary__span {
@@ -143,6 +146,9 @@ body {
   @media only screen and (max-width: 75em) {
     .btn, .btn:link, .btn:visited {
       font-size: 3.6rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 3rem; } }
 
 .btn:hover {
   transform: translateY(-5px);

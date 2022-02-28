@@ -12,6 +12,10 @@
     font-size: 6.4rem;
   }
 
+  @include respond(bp-smallest) {
+    font-size: 5rem;
+  }
+
   &__word {
     display: inline-block;
   }

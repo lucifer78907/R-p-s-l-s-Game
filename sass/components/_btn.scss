@@ -18,6 +18,10 @@
     @include respond(bp-large) {
       font-size: 3.6rem;
     }
+
+    @include respond(bp-smallest) {
+      font-size: 3rem;
+    }
   }
 
   &:hover {
