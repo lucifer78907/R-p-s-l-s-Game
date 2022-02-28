@@ -296,6 +296,7 @@ body {
   background-color: var(--color-header-grey-2);
   position: absolute;
   top: -0.7rem;
+  display: inline-block;
   transition: all 0.2s; }
 
 .nav__icon::after {
@@ -306,6 +307,7 @@ body {
   position: absolute;
   top: 0.7rem;
   left: 0;
+  display: inline-block;
   transition: all 0.2s; }
 
 .nav__nav {
@@ -360,3 +362,14 @@ body {
   transform: translate(-50%, -50%);
   position: fixed;
   opacity: 1; }
+
+.nav__checkbox:checked + .nav__button .nav__icon::before {
+  transform: rotate(130deg);
+  top: 0; }
+
+.nav__checkbox:checked + .nav__button .nav__icon {
+  background-color: transparent; }
+
+.nav__checkbox:checked + .nav__button .nav__icon::after {
+  transform: rotate(-130deg);
+  top: 0; }
