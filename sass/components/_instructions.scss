@@ -9,6 +9,10 @@
     margin-top: -15rem;
   }
 
+  @include respond(bp-medium) {
+    padding: 18rem 0 6rem;
+  }
+
   &__list {
     list-style: none;
     font-size: 6rem;

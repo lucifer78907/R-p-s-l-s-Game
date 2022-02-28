@@ -35,6 +35,9 @@ html {
   @media only screen and (max-width: 59em) {
     html {
       font-size: 56.25%; } }
+  @media only screen and (max-width: 43.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: var(--font-secondary);
@@ -183,6 +186,9 @@ body {
   @media only screen and (max-width: 75em) {
     .instructions {
       margin-top: -15rem; } }
+  @media only screen and (max-width: 59em) {
+    .instructions {
+      padding: 18rem 0 6rem; } }
   .instructions__list {
     list-style: none;
     font-size: 6rem;
@@ -245,6 +251,9 @@ body {
   background-color: var(--color-grey-2);
   padding: 8rem;
   text-align: center; }
+  @media only screen and (max-width: 43.75em) {
+    .play_now {
+      padding: 3rem; } }
 
 .play_form {
   text-align: start;
@@ -266,6 +275,12 @@ body {
   @media only screen and (max-width: 75em) {
     .form {
       width: 70%; } }
+  @media only screen and (max-width: 59em) {
+    .form {
+      width: 90%; } }
+  @media only screen and (max-width: 43.75em) {
+    .form {
+      width: 100%; } }
   .form__label {
     display: inline-block;
     color: var(--color-header-grey-2);
@@ -309,6 +324,10 @@ body {
     .nav__background {
       height: 6.5rem;
       width: 6.5rem; } }
+  @media only screen and (max-width: 59em) {
+    .nav__background {
+      top: 2rem;
+      right: 2rem; } }
 
 .nav__button {
   height: 7rem;
@@ -324,6 +343,10 @@ body {
     .nav__button {
       height: 6.5rem;
       width: 6.5rem; } }
+  @media only screen and (max-width: 59em) {
+    .nav__button {
+      top: 2rem;
+      right: 2rem; } }
 
 .nav__icon {
   height: 2px;

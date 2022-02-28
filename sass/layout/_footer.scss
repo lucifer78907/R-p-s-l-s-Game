@@ -2,6 +2,10 @@
   background-color: var(--color-grey-2);
   padding: 8rem;
   text-align: center;
+
+  @include respond(bp-small) {
+    padding: 3rem;
+  }
 }
 
 .play_form {
@@ -28,6 +32,14 @@
 
   @include respond(bp-large) {
     width: 70%;
+  }
+
+  @include respond(bp-medium) {
+    width: 90%;
+  }
+
+  @include respond(bp-small) {
+    width: 100%;
   }
 
   &__label {

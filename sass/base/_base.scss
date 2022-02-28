@@ -13,6 +13,10 @@ html {
   @include respond(bp-medium) {
     font-size: 56.25%;
   }
+
+  @include respond(bp-small) {
+    font-size: 50%;
+  }
 }
 
 body {

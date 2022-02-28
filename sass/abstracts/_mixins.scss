@@ -17,4 +17,10 @@
       @content;
     }
   }
+
+  @if $breakpoint==bp-small {
+    @media only screen and (max-width:43.75em) {
+      @content;
+    }
+  }
 }
