@@ -1,343 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/site.webmanifest" />
-    <script src="https://unpkg.com/phosphor-icons"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gochi+Hand&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>R-P-S-L-S</title>
-  </head>
-  <body>
-    <div class="nav">
-      <input type="checkbox" class="nav__checkbox" id="navi-toggle" />
-      <label for="navi-toggle" class="nav__button">
-        <span class="nav__icon">&nbsp;</span>
-      </label>
-      <div class="nav__background">&nbsp;</div>
-      <nav class="nav__nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">How to play</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Play now</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <header class="header">
-      <ion-icon name="dice-outline" class="header__icon"></ion-icon>
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <div class="heading-primary__word">
-            <span class="heading-primary__span heading-primary__span--color-2"
-              >R</span
-            ><span class="heading-primary__span">o</span
-            ><span class="heading-primary__span heading-primary__span--color-1"
-              >c</span
-            ><span class="heading-primary__span">k</span>
-          </div>
-          <div class="heading-primary__word">
-            <span class="heading-primary__span heading-primary__span--color-1"
-              >P</span
-            ><span class="heading-primary__span">a</span
-            ><span class="heading-primary__span heading-primary__span--color"
-              >p</span
-            ><span class="heading-primary__span">e</span
-            ><span class="heading-primary__span heading-primary__span--color-1"
-              >r</span
-            >
-          </div>
-          <div class="heading-primary__word">
-            <span class="heading-primary__span heading-primary__span--color-2"
-              >S</span
-            ><span class="heading-primary__span">c</span
-            ><span class="heading-primary__span heading-primary__span--color"
-              >i</span
-            ><span class="heading-primary__span">s</span
-            ><span class="heading-primary__span">s</span
-            ><span class="heading-primary__span heading-primary__span--color-1"
-              >o</span
-            ><span class="heading-primary__span">r</span
-            ><span class="heading-primary__span heading-primary__span--color-2"
-              >s</span
-            >
-          </div>
-          <div class="heading-primary__word">
-            <span class="heading-primary__span heading-primary__span--color-1"
-              >L</span
-            ><span class="heading-primary__span">i</span
-            ><span class="heading-primary__span heading-primary__span--color"
-              >z</span
-            ><span class="heading-primary__span">a</span
-            ><span class="heading-primary__span">r</span
-            ><span class="heading-primary__span heading-primary__span--color-2"
-              >d</span
-            >
-          </div>
-          <div class="heading-primary__word">
-            <span
-              class="heading-primary__span heading-primary__span--color heading-primary__span--color-2"
-              >S</span
-            ><span class="heading-primary__span">p</span
-            ><span class="heading-primary__span heading-primary__span--color"
-              >o</span
-            ><span class="heading-primary__span">c</span
-            ><span class="heading-primary__span heading-primary__span--color-1"
-              >k</span
-            >
-          </div>
-        </h1>
-        <a href="#instructions" class="btn btn--header"
-          >Instructions <span>&darr;</span></a
-        >
-      </div>
-    </header>
-    <main>
-      <section class="instructions" id="instructions">
-        <h2 class="heading-secondary">How to play &quest;</h2>
-        <ul class="instructions__list">
-          <li class="instructions__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="instructions__icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              />
-            </svg>
-            <span class="instructions__text">Scissors cuts Paper</span>
-          </li>
-          <li class="instructions__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="instructions__icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              />
-            </svg>
-            <span class="instructions__text">Paper covers Rock</span>
-          </li>
-          <li class="instructions__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="instructions__icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              />
-            </svg>
-            <span class="instructions__text">Rock crushes Lizard</span>
-          </li>
-          <li class="instructions__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="instructions__icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              />
-            </svg>
-            <span class="instructions__text">Lizard poisons Spock</span>
-          </li>
-          <li class="instructions__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="instructions__icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              />
-            </svg>
-            <span class="instructions__text">Spock smashes Scissors</span>
-          </li>
-          <li class="instructions__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="instructions__icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              />
-            </svg>
-            <span class="instructions__text">Scissors decapitates Lizard</span>
-          </li>
-          <li class="instructions__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="instructions__icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              />
-            </svg>
-            <span class="instructions__text">Lizard eats Paper</span>
-          </li>
-          <li class="instructions__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="instructions__icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              />
-            </svg>
-            <span class="instructions__text">Paper disproves Spock</span>
-          </li>
-          <li class="instructions__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="instructions__icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              />
-            </svg>
-            <span class="instructions__text">Spock vaporises Rock</span>
-          </li>
-          <li class="instructions__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="instructions__icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-              />
-            </svg>
-            <span class="instructions__text">Rock crushes Scissors</span>
-          </li>
-        </ul>
-      </section>
-      <section class="play_now">
-        <h2 class="heading-secondary">Are you ready to play?</h2>
-        <div class="play_form">
-          <form class="form">
-            <label for="fname" class="form__label" aria-placeholder="First Name"
-              >First name</label
-            >
-            <input
-              type="text"
-              class="form__input"
-              id="fname"
-              placeholder="First Name"
-            />
-            <label for="lname" class="form__label">Last name</label>
-            <input
-              type="text"
-              class="form__input"
-              id="lname"
-              placeholder="Last Name"
-            />
-            <label for="email" class="form__label">Email address</label>
-            <input
-              type="email"
-              class="form__input"
-              id="email"
-              placeholder="Email Address"
-            />
-          </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+  <link rel="manifest" href="img/site.webmanifest" />
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gochi+Hand&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>R-P-S-L-S</title>
+</head>
+
+<body>
+  <div class="nav">
+    <input type="checkbox" class="nav__checkbox" id="navi-toggle" />
+    <label for="navi-toggle" class="nav__button">
+      <span class="nav__icon">&nbsp;</span>
+    </label>
+    <div class="nav__background">&nbsp;</div>
+    <nav class="nav__nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">How to play</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Play now</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <header class="header">
+    <ion-icon name="dice-outline" class="header__icon"></ion-icon>
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+        <div class="heading-primary__word">
+          <span class="heading-primary__span heading-primary__span--color-2">R</span><span
+            class="heading-primary__span">o</span><span
+            class="heading-primary__span heading-primary__span--color-1">c</span><span
+            class="heading-primary__span">k</span>
         </div>
-        <a href="#" class="btn btn--play">Play Now <span>!</span></a>
-      </section>
-    </main>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+        <div class="heading-primary__word">
+          <span class="heading-primary__span heading-primary__span--color-1">P</span><span
+            class="heading-primary__span">a</span><span
+            class="heading-primary__span heading-primary__span--color">p</span><span
+            class="heading-primary__span">e</span><span
+            class="heading-primary__span heading-primary__span--color-1">r</span>
+        </div>
+        <div class="heading-primary__word">
+          <span class="heading-primary__span heading-primary__span--color-2">S</span><span
+            class="heading-primary__span">c</span><span
+            class="heading-primary__span heading-primary__span--color">i</span><span
+            class="heading-primary__span">s</span><span class="heading-primary__span">s</span><span
+            class="heading-primary__span heading-primary__span--color-1">o</span><span
+            class="heading-primary__span">r</span><span
+            class="heading-primary__span heading-primary__span--color-2">s</span>
+        </div>
+        <div class="heading-primary__word">
+          <span class="heading-primary__span heading-primary__span--color-1">L</span><span
+            class="heading-primary__span">i</span><span
+            class="heading-primary__span heading-primary__span--color">z</span><span
+            class="heading-primary__span">a</span><span class="heading-primary__span">r</span><span
+            class="heading-primary__span heading-primary__span--color-2">d</span>
+        </div>
+        <div class="heading-primary__word">
+          <span class="heading-primary__span heading-primary__span--color heading-primary__span--color-2">S</span><span
+            class="heading-primary__span">p</span><span
+            class="heading-primary__span heading-primary__span--color">o</span><span
+            class="heading-primary__span">c</span><span
+            class="heading-primary__span heading-primary__span--color-1">k</span>
+        </div>
+      </h1>
+      <a href="#instructions" class="btn btn--header">Instructions <span>&darr;</span></a>
+    </div>
+  </header>
+  <main>
+    <section class="instructions" id="instructions">
+      <h2 class="heading-secondary">How to play &quest;</h2>
+      <ul class="instructions__list">
+        <li class="instructions__item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="instructions__icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <span class="instructions__text">Scissors cuts Paper</span>
+        </li>
+        <li class="instructions__item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="instructions__icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <span class="instructions__text">Paper covers Rock</span>
+        </li>
+        <li class="instructions__item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="instructions__icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <span class="instructions__text">Rock crushes Lizard</span>
+        </li>
+        <li class="instructions__item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="instructions__icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <span class="instructions__text">Lizard poisons Spock</span>
+        </li>
+        <li class="instructions__item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="instructions__icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <span class="instructions__text">Spock smashes Scissors</span>
+        </li>
+        <li class="instructions__item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="instructions__icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <span class="instructions__text">Scissors decapitates Lizard</span>
+        </li>
+        <li class="instructions__item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="instructions__icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <span class="instructions__text">Lizard eats Paper</span>
+        </li>
+        <li class="instructions__item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="instructions__icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <span class="instructions__text">Paper disproves Spock</span>
+        </li>
+        <li class="instructions__item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="instructions__icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <span class="instructions__text">Spock vaporises Rock</span>
+        </li>
+        <li class="instructions__item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="instructions__icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <span class="instructions__text">Rock crushes Scissors</span>
+        </li>
+      </ul>
+    </section>
+    <section class="play_now">
+      <h2 class="heading-secondary">Are you ready to play?</h2>
+      <div class="play_form">
+        <form class="form">
+          <label for="fname" class="form__label" aria-placeholder="First Name">First name</label>
+          <input type="text" class="form__input" id="fname" placeholder="First Name" />
+          <label for="lname" class="form__label">Last name</label>
+          <input type="text" class="form__input" id="lname" placeholder="Last Name" />
+          <label for="email" class="form__label">Email address</label>
+          <input type="email" class="form__input" id="email" placeholder="Email Address" />
+        </form>
+      </div>
+      <a href="#" class="btn btn--play">Play Now <span>!</span></a>
+    </section>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
