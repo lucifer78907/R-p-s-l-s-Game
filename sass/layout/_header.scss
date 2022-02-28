@@ -9,6 +9,11 @@
   text-align: center;
   position: relative;
 
+  @include respond(bp-large) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  }
+
   &__icon {
     width: 6rem;
     height: 6rem;

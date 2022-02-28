@@ -10,9 +10,14 @@
     border-radius: 50%;
     z-index: 1000;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 4rem;
+    right: 4rem;
     transition: all 800ms ease-out;
+
+    @include respond(bp-large) {
+      height: 6.5rem;
+      width: 6.5rem;
+    }
   }
 
   &__button {
@@ -22,8 +27,14 @@
     background-color: var(--color-white);
     z-index: 9999;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 4rem;
+    right: 4rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+
+    @include respond(bp-large) {
+      height: 6.5rem;
+      width: 6.5rem;
+    }
   }
 
   &__icon {

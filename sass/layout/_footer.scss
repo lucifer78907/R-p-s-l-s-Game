@@ -6,11 +6,9 @@
 
 .play_form {
   text-align: start;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       #faa2c1,
-      rgba(176, 151, 252, 0.481)
-    ),
+      rgba(176, 151, 252, 0.481)),
     url("../../img/play_now.jpg");
   background-position: center;
   background-size: cover;
@@ -27,6 +25,10 @@
   gap: 3rem;
   font-size: 3.6rem;
   margin: 4rem 0;
+
+  @include respond(bp-large) {
+    width: 70%;
+  }
 
   &__label {
     display: inline-block;

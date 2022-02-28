@@ -9,6 +9,10 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include respond(bp-medium) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -17,6 +21,10 @@ body {
   line-height: 1;
   padding: 2.4rem;
   box-sizing: border-box;
+
+  @include respond(bp-medium) {
+    padding: 0;
+  }
 }
 
 ::selection {

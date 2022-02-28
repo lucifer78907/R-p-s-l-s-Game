@@ -4,3 +4,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==bp-large {
+    @media only screen and (max-width:75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==bp-medium {
+    @media only screen and (max-width:59em) {
+      @content;
+    }
+  }
+}

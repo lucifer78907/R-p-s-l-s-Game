@@ -4,6 +4,11 @@
   text-align: center;
   background-color: var(--color-grey-2);
 
+
+  @include respond(bp-large) {
+    margin-top: -15rem;
+  }
+
   &__list {
     list-style: none;
     font-size: 6rem;
@@ -13,6 +18,15 @@
     justify-content: center;
     row-gap: 6rem;
     column-gap: 9.6rem;
+
+    @include respond(bp-large) {
+      font-size: 4.8rem;
+      column-gap: 6rem;
+    }
+
+    @include respond(bp-medium) {
+      grid-template-columns: max-content;
+    }
   }
 
   &__item {
