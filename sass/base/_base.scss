@@ -18,3 +18,8 @@ body {
   padding: 2.4rem;
   box-sizing: border-box;
 }
+
+::selection {
+  color: var(--color-white);
+  background-color: var(--color-header-1);
+}
