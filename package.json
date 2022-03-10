@@ -4,7 +4,8 @@
   "description": "Game made with backend as flask",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "watch:card": "node-sass sass/pages/card.scss css/style_card.css -w"
   },
   "author": "Rudra",
   "license": "ISC",
