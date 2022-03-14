@@ -1,0 +1,25 @@
+.card__select {
+    background-color: var(--color-grey-2);
+    padding: 20rem 8rem;
+    margin-top: -15rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, max-content));
+    row-gap: 6rem;
+    column-gap: 6rem;
+    justify-content: center;
+}
+
+.card {
+    height: 50rem;
+    background-color: rebeccapurple;
+    padding: 2rem;
+    font-size: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__text {
+        display: inline-block;
+        font-weight: 700;
+    }
+}
