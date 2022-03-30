@@ -71,4 +71,38 @@
         display: inline-block;
         font-weight: 700;
     }
+
+    &__form {
+        @include absCen;
+        top: 70%;
+        font-family: inherit;
+        font-size: 4.8rem;
+        font-weight: 700;
+        color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+    &__submit {
+        font-size: 3rem;
+        padding: 1rem 4rem;
+        border-radius: 10000px;
+        border: none;
+        font-family: inherit;
+        box-shadow: 0 0.5rem 0.5rem #faa2c1;
+        transition: transform 0.3s;
+        background-color: var(--color-white);
+
+        &:hover {
+            transform: translateY(-0.5rem);
+        }
+
+        &:active {
+            transform: translateY(0.1rem);
+        }
+    }
 }
